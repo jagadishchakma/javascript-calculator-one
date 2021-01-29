@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="result-cal">
+            <input type="text" name="display" value="" class="result" id="result">
+        </div>
+        <div class="line">
+            <input type="button" class="btn" value="9" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="8" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="7" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="+" onclick="calculator(this.value)">
+        </div>
+        <div class="line">
+            <input type="button" class="btn" value="6" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="5" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="4" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="-" onclick="calculator(this.value)">
+        </div>
+        <div class="line">
+            <input type="button" class="btn" value="3" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="2" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="1" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="*" onclick="calculator(this.value)">
+        </div>
+        <div class="line">
+            <input type="button" class="btn" value="0" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="00" onclick="calculator(this.value)">
+            <input type="button" class="btn" value="." onclick="calculator(this.value)">
+            <input type="button" class="btn" value="/" onclick="calculator(this.value)">
+        </div>
+        <div class="line">
+            <input type="button" class="btn-last" value="Delete" onclick="clearDisplay()">
+            <input type="button" class="btn-last" value="=" onclick="result()">
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
